@@ -1,0 +1,117 @@
+body {
+}
+
+.icon-comp-wrapper {
+  zoom: 0.4;
+  position: relative;
+  display: inline-block;
+  margin: 0 auto;
+  perspective: 5000px;
+  width: 400px;
+  height: 400px;
+  border-radius: 50%;
+  background-color: #76C2AF;
+  box-shadow: 0 3px 0 rgba(0, 0, 0, 0.3), 0 1px 0 #fff;
+}
+.icon-comp-wrapper .glare {
+  overflow: hidden;
+  height: 130px;
+  position: absolute;
+  width: 200px;
+}
+.icon-comp-wrapper .glare > div {
+  width: 161px;
+  height: 130px;
+  margin: 0 0 0 -55px;
+  transform: skew(20deg);
+  background: rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  position: relative;
+}
+.icon-comp-wrapper .screen {
+  position: absolute;
+  left: 80px;
+  top: 60px;
+  background-color: white;
+  width: 240px;
+  height: 170px;
+  padding: 20px;
+  border-radius: 10px;
+  margin: auto auto auto auto;
+  box-sizing: border-box;
+  box-shadow: 0 3px 0 rgba(0, 0, 0, 0.3), 0 1px 0 #fff;
+}
+.icon-comp-wrapper .screen .inner {
+  box-sizing: border-box;
+  background-color: #727D8F;
+  width: 200px;
+  height: 130px;
+  padding: 10px;
+  overflow: hidden;
+}
+.icon-comp-wrapper .screen .inner .codeblock {
+  height: 10px;
+  display: inline-block;
+  margin-bottom: 5px;
+  background-color: #F64E4F;
+}
+.icon-comp-wrapper .screen .inner .codeblock.purple {
+  background-color: #9E54B8;
+}
+.icon-comp-wrapper .screen .inner .codeblock.white {
+  background-color: white;
+}
+.icon-comp-wrapper .screen .inner .codeblock.yellow {
+  background-color: #ECC371;
+}
+.icon-comp-wrapper .screen .inner .codeblock.grey {
+  background-color: #727D8F;
+}
+.icon-comp-wrapper .screen:after {
+  width: 80px;
+  height: 40px;
+  left: 80px;
+  position: absolute;
+  background-color: white;
+  content: "";
+  z-index: -1;
+  box-shadow: 0 3px 0 rgba(0, 0, 0, 0.3), 0 1px 0 #fff;
+}
+.icon-comp-wrapper .keyboard {
+  position: absolute;
+  width: 205px;
+  left: 98px;
+  bottom: 40px;
+  height: 23%;
+  padding: 10px 10px 10px 5px;
+  border-radius: 10px;
+  background-color: #DAE2E4;
+  margin: 0 auto;
+  transform: rotateX(45deg);
+  box-shadow: 0 3px 0 rgba(0, 0, 0, 0.3), 0 1px 0 #fff;
+}
+.icon-comp-wrapper .keyboard .key {
+  cursor: pointer;
+  border-radius: 3px;
+  width: 13px;
+  height: 13px;
+  background-color: white;
+  display: block;
+  margin-left: 6px;
+  margin-bottom: 6px;
+  float: left;
+  box-shadow: 0 3px 0 rgba(0, 0, 0, 0.3), 0 1px 0 #fff;
+  transition: all .5s;
+}
+.icon-comp-wrapper .keyboard .key.pressed, .icon-comp-wrapper .keyboard .key:hover {
+  box-shadow: none;
+  background-color: #f2f2f2;
+  transform: rotateY(45deg);
+}
+.icon-comp-wrapper .keyboard .key#space {
+  position: absolute;
+  bottom: 4px;
+  width: 72px;
+  left: 60px;
+  height: 16px;
+}

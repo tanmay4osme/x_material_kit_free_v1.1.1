@@ -1,0 +1,231 @@
+body{
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#293355+51,b289c5+100 */
+background: rgb(41,51,85); /* Old browsers */
+background: -moz-linear-gradient(150deg, rgba(41,51,85,1) 51%,rgb(83, 52, 97) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(150deg, rgba(41,51,85,1) 51%,rgb(83, 52, 97) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(150deg, rgba(41,51,85,1) 51%,rgb(83, 52, 97) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#293355', endColorstr='#b289c5',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+  height: 100vh;
+}
+
+.mgtp50px{
+  margin-top:20px;
+}
+
+.col-sensor{
+  width:14.2857%;
+  padding-left:15px;    
+  padding-right:15px;
+  float:left;
+
+}
+
+.sensor-list{ 
+  height:132px;  width:132px;
+  border-radius:50%;
+  text-align:center;
+  padding:15px;
+}
+
+.sensor-list .reading{
+    font-size: 50px;
+    position: relative;
+    color: #dcdcdc;
+}
+
+.sensor-list .reading_icon{
+    position: relative;
+    color: #dcdcdc;
+}
+
+.sensor-list h3{
+  color:#fff;
+  margin:0;
+  font-size:14px;
+}
+
+.normal-stroke{stroke:#489f51 !important;}
+.caution-stroke{stroke:#fbc02d !important;}
+.warning-stroke{stroke:#f57e09 !important;}
+.danger-stroke{stroke:#f44336 !important;}
+
+
+
+.pulse-svg {
+  overflow: visible;
+}
+.pulse-svg circle {
+  stroke: #50E3C2;
+}
+.pulse-svg .first-circle, .pulse-svg .second-circle, .pulse-svg .third-circle {
+  transform-origin: center center;
+  animation: pulse-me 3s linear infinite;
+}
+.pulse-svg .second-circle {
+  animation-delay: 1s;
+}
+.pulse-svg .third-circle {
+  animation-delay: 2s;
+}
+
+@keyframes pulse-me {
+  0% {
+    r: 0;
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.3;
+  }
+  70% {
+    opacity: 0.09;
+  }
+  100% {
+    r: 125;
+    opacity: 0;
+  }
+}
+
+.water-pulse-svg {
+  overflow: visible;
+}
+.water-pulse-svg circle {
+  stroke: #50E3C2;
+}
+.water-pulse-svg .first-circle, .water-pulse-svg .second-circle, .water-pulse-svg .third-circle {
+  transform-origin: center center;
+  animation: water-pulse-me 3s linear infinite;
+}
+.water-pulse-svg .second-circle {
+  animation-delay: 1s;
+}
+.water-pulse-svg .third-circle {
+  animation-delay: 2s;
+}
+
+@keyframes water-pulse-me {
+  0% {
+    r: 0;
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.3;
+  }
+  70% {
+    opacity: 0.09;
+  }
+  100% {
+    r: 60;
+    opacity: 0;
+  }
+}
+
+.water {
+  stroke-dasharray: 10;
+  animation: water-flow 30s linear infinite;
+}
+
+@keyframes water-flow {
+  to {
+    stroke-dashoffset: -1000;
+  }
+}
+
+.svg-chicken{
+  width:1200px;
+  margin-left:auto;
+    margin-right:auto;
+  position:relative;
+
+}
+
+.rating-container svg {
+    height: 133px;
+    width: 133px;
+  transform: rotate(-90deg);
+}
+
+.rating-container svg .rating-progress-background {
+        fill: none;
+    stroke: #4f5465;
+    stroke-width: 1px;
+    stroke-dasharray: .5px;
+}
+
+
+
+.rating-container svg .rating-progress {
+        fill: none;
+    stroke: #489f51;
+    stroke-width: 1.5px;
+    stroke-dasharray: 100 100  ;
+    stroke-dashoffset: 100;
+/*   transition:all .1s cubic-bezier(0.99, 0.01, 0.62, 0.94); */
+  
+/*   transition: all 1s  ease-in-out; */
+  stroke-linecap:round;
+
+}
+
+.rating-container svg .rating-progress-dashed {
+    fill: none;
+    stroke: #4f5465;
+    stroke-dasharray: .5px;
+    stroke-width: .5px;
+    r: 14.5;
+}
+.rating-container{
+  position:relative;
+}
+.rating-container .number-reading{
+    position: absolute;
+    color: #dcdcdc;
+    top: 12px;
+  width:100%;
+  
+
+}
+
+.rating-container .number-reading .reading{
+       font-size: 50px;
+    color: #dcdcdc;
+
+}
+.rating-container .number-reading .reading_icon{
+  
+}
+.rating-container h3{font-size:13px;}
+
+
+
+.test-size{
+      height: 132px;
+    width: 132px;
+    display: inline-block;
+    position: relative;
+    border-radius: 50%;
+    margin: 0 5px;
+}
+
+.test-size svg{
+  transform: rotate(-90deg);
+  background:none;
+}
+
+.test-size svg .rating-aaa {
+    fill: none;
+  stroke: #FF5D00;
+  stroke-dasharray: 100 100;
+  stroke-dashoffset: 100;
+  stroke-linecap: square;
+  stroke-width: 1.5;
+  transition: all 1.2s cubic-bezier(0.99, 0.01, 0.62, 0.94);
+}
+
+.test-size svg .asd{
+        fill: none;
+    stroke: #4f5465;
+    stroke-width: 1px;
+    stroke-dasharray: .5px;
+}
+
+

@@ -1,0 +1,94 @@
+.iot-sensor-icon {
+  bottom: -80px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-image: url("https://software.org/wp-content/uploads/iot-connection.png");
+  background-size: 100%;
+  position: absolute;
+  display: inline-block;
+  z-index: 1;
+  opacity: 1;
+}
+
+.iot-sensor-icon:nth-child(1) {
+  left: 0%;
+  -webkit-animation: float-sensors 2s 0.5s infinite cubic-bezier(0.21, 0.34, 0.78, 0.46) normal;
+          animation: float-sensors 2s 0.5s infinite cubic-bezier(0.21, 0.34, 0.78, 0.46) normal;
+}
+
+.iot-sensor-icon:nth-child(2) {
+  left: 15%;
+  -webkit-animation: float-sensors 2s 1.5s infinite cubic-bezier(0.21, 0.34, 0.78, 0.46) normal;
+          animation: float-sensors 2s 1.5s infinite cubic-bezier(0.21, 0.34, 0.78, 0.46) normal;
+}
+
+.iot-sensor-icon:nth-child(3) {
+  left: 30%;
+  -webkit-animation: float-sensors 2s 1s infinite cubic-bezier(0.21, 0.34, 0.78, 0.46) normal;
+          animation: float-sensors 2s 1s infinite cubic-bezier(0.21, 0.34, 0.78, 0.46) normal;
+}
+
+.iot-sensor-icon:nth-child(4) {
+  left: 45%;
+  -webkit-animation: float-sensors 2s 2s infinite cubic-bezier(0.21, 0.34, 0.78, 0.46) normal;
+          animation: float-sensors 2s 2s infinite cubic-bezier(0.21, 0.34, 0.78, 0.46) normal;
+}
+
+.iot-sensor-icon:nth-child(5) {
+  left: 60%;
+  -webkit-animation: float-sensors 2s 1.8s infinite cubic-bezier(0.21, 0.34, 0.78, 0.46) normal;
+          animation: float-sensors 2s 1.8s infinite cubic-bezier(0.21, 0.34, 0.78, 0.46) normal;
+}
+
+.iot-sensor-icon:nth-child(6) {
+  left: 75%;
+  -webkit-animation: float-sensors 2s 1.7s infinite cubic-bezier(0.21, 0.34, 0.78, 0.46) normal;
+          animation: float-sensors 2s 1.7s infinite cubic-bezier(0.21, 0.34, 0.78, 0.46) normal;
+}
+
+.iot-sensor-icon:nth-child(7) {
+  left: 90%;
+  -webkit-animation: float-sensors 2s 2.5s infinite cubic-bezier(0.21, 0.34, 0.78, 0.46) normal;
+          animation: float-sensors 2s 2.5s infinite cubic-bezier(0.21, 0.34, 0.78, 0.46) normal;
+}
+
+@-webkit-keyframes float-sensors {
+  0% {
+    width: 10px;
+    height: 10px;
+    opacity: 0;
+    bottom: 0;
+  }
+  15% {
+    width: 20px;
+    height: 20px;
+    opacity: .6;
+  }
+  100% {
+    width: 40px;
+    height: 40px;
+    opacity: 1;
+    bottom: 100%;
+  }
+}
+
+@keyframes float-sensors {
+  0% {
+    width: 10px;
+    height: 10px;
+    opacity: 0;
+    bottom: 0;
+  }
+  15% {
+    width: 20px;
+    height: 20px;
+    opacity: .6;
+  }
+  100% {
+    width: 40px;
+    height: 40px;
+    opacity: 1;
+    bottom: 100%;
+  }
+}
